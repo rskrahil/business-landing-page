@@ -1,0 +1,140 @@
+/* ── Reset & Base ─────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fafaf9;
+  color: #1a1a1a;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── CSS Variables ────────────────────────────────────────────── */
+:root {
+  --orange:     #dda15e;
+  --orange-d:   #c8864a;
+  --orange-ll:  #fdf6ef;
+  --orange-l:   #f5e6d3;
+  --bg:         #fafaf9;
+  --text:       #1a1a1a;
+  --text2:      #555555;
+  --text3:      #999999;
+  --border:     #e8e4de;
+  --border-l:   #f0ece6;
+  --shadow:     rgba(221, 161, 94, 0.15);
+  --shadow-sm:  rgba(0, 0, 0, 0.07);
+}
+
+/* ── Typography ───────────────────────────────────────────────── */
+h1, h2, h3, h4, h5 {
+  font-family: 'Syne', sans-serif;
+  color: var(--text);
+}
+
+p, span, a, li, input, textarea, button {
+  font-family: 'DM Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input, textarea {
+  outline: none;
+  font-family: 'DM Sans', sans-serif;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #bbb;
+}
+
+/* ── Keyframe Animations ──────────────────────────────────────── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.8); }
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(28px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Utility Classes ──────────────────────────────────────────── */
+.section-padding {
+  padding: 100px 60px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container-wide {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ── Responsive Breakpoints ───────────────────────────────────── */
+@media (max-width: 900px) {
+  .section-padding {
+    padding: 70px 24px;
+  }
+
+  .two-col {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+
+  .three-col {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .four-col {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .desktop-nav {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+
+  nav {
+    padding: 14px 24px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .two-col,
+  .three-col,
+  .four-col {
+    grid-template-columns: 1fr !important;
+  }
+}
