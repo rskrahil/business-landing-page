@@ -1,0 +1,120 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding: 14px 60px;
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 20px var(--shadow-sm);
+}
+
+.navbar-logo {
+  font-family: 'Syne', sans-serif;
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.navbar-logo span {
+  color: var(--orange);
+}
+
+.navbar-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+.navbar-links button {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 15px;
+  color: var(--text2);
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+  transition: all 0.2s;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+
+.navbar-links button.active,
+.navbar-links button:hover {
+  color: var(--orange);
+}
+
+.navbar-links button.active {
+  font-weight: 600;
+  border-bottom-color: var(--orange);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  padding: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mobile-menu.closed {
+  transform: translateX(100%);
+}
+
+.mobile-menu a {
+  font-family: 'Syne', sans-serif;
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--text);
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 14px 24px;
+  }
+  .hamburger {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+  }
+}
