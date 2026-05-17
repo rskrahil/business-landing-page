@@ -68,11 +68,11 @@ IZWebsite/
 
 
 
-\# 👨‍💻 Author
+\ 👨‍💻 Author
 
 
 
-\## Rahil Shaikh
+\ Rahil Shaikh
 
 
 
@@ -82,7 +82,7 @@ Passionate about Frontend Development, React Applications, Python Development, a
 
 
 
-\### Connect With Me
+\ Connect With Me
 
 
 
