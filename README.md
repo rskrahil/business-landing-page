@@ -1,40 +1,40 @@
 # IZU Solutions — Business Landing Page
 
-A modern, fully responsive business landing page built with **React** and **Vite**, featuring smooth animations, a clean white & orange design, and a well-structured component architecture.
+A modern, fully responsive business landing page built with **React** and **Vite**, featuring smooth animations, a clean white \& orange design, and a well-structured component architecture.
 
----
+\---
 
 ## 🌐 Live Preview
 
 > Coming soon — will be deployed on Vercel
 
----
+\---
 
 ## 🚀 Tech Stack
 
-| Technology | Purpose |
-|------------|---------|
-| React 18 | UI component library |
-| Vite | Build tool and dev server |
-| CSS3 | Styling with variables and animations |
-| JavaScript ES6+ | Logic and interactivity |
+|Technology|Purpose|
+|-|-|
+|React 18|UI component library|
+|Vite|Build tool and dev server|
+|CSS3|Styling with variables and animations|
+|JavaScript ES6+|Logic and interactivity|
 
----
+\---
 
 ## ✨ Features
 
-- ⚡ Fast performance with Vite
-- 📱 Fully responsive — works on mobile, tablet, and desktop
-- 🎨 Clean white & orange design
-- 🔄 Animated cycling hero headline
-- 📜 Smooth scroll-triggered fade-up animations
-- 🍔 Mobile hamburger menu with animation
-- 🎞️ Auto-scrolling marquee banner
-- 📂 Accordion to show/hide all 16 services
-- 📬 Contact form with success message
-- 🎯 Active navbar link tracking
+* ⚡ Fast performance with Vite
+* 📱 Fully responsive — works on mobile, tablet, and desktop
+* 🎨 Clean white \& orange design
+* 🔄 Animated cycling hero headline
+* 📜 Smooth scroll-triggered fade-up animations
+* 🍔 Mobile hamburger menu with animation
+* 🎞️ Auto-scrolling marquee banner
+* 📂 Accordion to show/hide all 16 services
+* 📬 Contact form with success message
+* 🎯 Active navbar link tracking
 
----
+\---
 
 ## 🗂️ Project Structure
 
@@ -65,3 +65,30 @@ IZWebsite/
         ├── Industries.jsx      ← Industries we serve section
         └── Footer.jsx          ← Footer with contact form
 ```
+
+
+
+\# 👨‍💻 Author
+
+
+
+\## Rahil Shaikh
+
+
+
+Master’s Student in Information Technology at the University of the Cumberlands.  
+
+Passionate about Frontend Development, React Applications, Python Development, and building modern responsive web applications.
+
+
+
+\### Connect With Me
+
+
+
+\- GitHub: https://github.com/your-github-username
+
+\- LinkedIn: https://linkedin.com/in/your-linkedin-profile
+
+\- Portfolio: Coming Soon
+
